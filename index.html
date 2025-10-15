@@ -676,10 +676,10 @@
       // Function to send height to parent window
       function updateParentHeight() {
         const height = document.documentElement.scrollHeight;
-        window.parent.postMessage({ 
-          type: 'iframeHeight', 
-          height: height 
-        }, '*');
+        console.log("Current document height:", height);
+        const message = "documentHeight:" + height;
+
+        parent.postMessage(message, "*");
       }
 
       // Update height on load and when content changes
