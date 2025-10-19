@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Request Form - Promising Pages</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <style>
       * {
         box-sizing: border-box;
@@ -15,8 +18,8 @@
       }
 
       body {
-        font-family: 'Open Sans', sans-serif;
-        background: linear-gradient(135deg, #205E61 0%, #113868 100%);
+        font-family: "Open Sans", sans-serif;
+        background: linear-gradient(135deg, #205e61 0%, #113868 100%);
         padding: 20px;
         line-height: 1.6;
       }
@@ -31,7 +34,7 @@
       }
 
       .form-header {
-        background: linear-gradient(135deg, #205E61 0%, #113868 100%);
+        background: linear-gradient(135deg, #205e61 0%, #113868 100%);
         color: white;
         padding: 50px 40px;
         text-align: center;
@@ -39,17 +42,17 @@
       }
 
       .form-header::after {
-        content: '';
+        content: "";
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
         height: 6px;
-        background: linear-gradient(90deg, #F2AD52 0%, #FF9E7A 100%);
+        background: linear-gradient(90deg, #f2ad52 0%, #ff9e7a 100%);
       }
 
       .form-header h1 {
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-size: 36px;
         font-weight: 700;
         margin-bottom: 8px;
@@ -57,18 +60,18 @@
       }
 
       .form-header .subtitle {
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
         font-size: 16px;
         opacity: 0.95;
         margin-bottom: 16px;
       }
 
       .form-header .tagline {
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
         font-size: 18px;
         font-weight: 500;
         font-style: italic;
-        color: #F2AD52;
+        color: #f2ad52;
         margin-top: 12px;
       }
 
@@ -77,8 +80,8 @@
       }
 
       .info-box {
-        background: linear-gradient(135deg, #B9D9EB 0%, #e8f4f8 100%);
-        border-left: 5px solid #205E61;
+        background: linear-gradient(135deg, #b9d9eb 0%, #e8f4f8 100%);
+        border-left: 5px solid #205e61;
         padding: 24px;
         margin-bottom: 40px;
         border-radius: 12px;
@@ -91,20 +94,20 @@
         display: block;
         margin-bottom: 12px;
         color: #113868;
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
         font-size: 16px;
         font-weight: 600;
       }
 
       .info-box a {
-        color: #205E61;
+        color: #205e61;
         font-weight: 600;
         text-decoration: none;
         transition: all 0.3s ease;
       }
 
       .info-box a:hover {
-        color: #F2AD52;
+        color: #f2ad52;
         text-decoration: underline;
       }
 
@@ -116,24 +119,24 @@
       }
 
       .section-title {
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-size: 24px;
         font-weight: 700;
         color: #113868;
         margin: 50px 0 24px 0;
         padding-bottom: 12px;
-        border-bottom: 4px solid #F2AD52;
+        border-bottom: 4px solid #f2ad52;
         position: relative;
       }
 
       .section-title::after {
-        content: '';
+        content: "";
         position: absolute;
         bottom: -4px;
         left: 0;
         width: 80px;
         height: 4px;
-        background: #205E61;
+        background: #205e61;
       }
 
       .form-group {
@@ -142,7 +145,7 @@
 
       .form-group label {
         display: block;
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
         font-weight: 600;
         color: #113868;
         margin-bottom: 8px;
@@ -157,10 +160,10 @@
       .form-group textarea {
         width: 100%;
         padding: 14px 16px;
-        border: 2px solid #B9D9EB;
+        border: 2px solid #b9d9eb;
         border-radius: 10px;
         font-size: 15px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: "Open Sans", sans-serif;
         transition: all 0.3s ease;
         background: white;
       }
@@ -172,7 +175,7 @@
       .form-group select:focus,
       .form-group textarea:focus {
         outline: none;
-        border-color: #205E61;
+        border-color: #205e61;
         box-shadow: 0 0 0 4px rgba(32, 94, 97, 0.1);
       }
 
@@ -204,7 +207,7 @@
       }
 
       .book-input-group label {
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
         font-size: 13px;
         font-weight: 500;
         color: #545454;
@@ -213,26 +216,26 @@
 
       .book-input-group input {
         padding: 12px 14px;
-        border: 2px solid #B9D9EB;
+        border: 2px solid #b9d9eb;
         border-radius: 10px;
         font-size: 14px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: "Open Sans", sans-serif;
         transition: all 0.3s ease;
       }
 
       .book-input-group input:focus {
         outline: none;
-        border-color: #205E61;
+        border-color: #205e61;
         box-shadow: 0 0 0 4px rgba(32, 94, 97, 0.1);
       }
 
       .submit-btn {
-        background: linear-gradient(135deg, #205E61 0%, #113868 100%);
+        background: linear-gradient(135deg, #205e61 0%, #113868 100%);
         color: white;
         border: none;
         padding: 18px 60px;
         font-size: 17px;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-weight: 700;
         border-radius: 12px;
         cursor: pointer;
@@ -247,7 +250,7 @@
       .submit-btn:hover {
         transform: translateY(-3px);
         box-shadow: 0 12px 30px rgba(17, 56, 104, 0.4);
-        background: linear-gradient(135deg, #113868 0%, #205E61 100%);
+        background: linear-gradient(135deg, #113868 0%, #205e61 100%);
       }
 
       .submit-btn:active {
@@ -270,7 +273,7 @@
         max-width: 450px;
         width: 90%;
         animation: slideIn 0.3s ease;
-        border-top: 5px solid #F2AD52;
+        border-top: 5px solid #f2ad52;
       }
 
       /* Force alert to appear in viewport center even in iframe */
@@ -306,18 +309,18 @@
         font-size: 16px;
         color: #113868;
         line-height: 1.6;
-        font-family: 'Open Sans', sans-serif;
+        font-family: "Open Sans", sans-serif;
       }
 
       #customAlertBox button {
-        background: linear-gradient(135deg, #205E61 0%, #113868 100%);
+        background: linear-gradient(135deg, #205e61 0%, #113868 100%);
         color: white;
         border: none;
         padding: 12px 40px;
         border-radius: 10px;
         cursor: pointer;
         font-size: 15px;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-weight: 600;
         transition: all 0.3s ease;
       }
@@ -339,8 +342,12 @@
       }
 
       @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
       }
 
       /* Helper text styling */
@@ -348,7 +355,7 @@
         font-weight: 600;
         margin-bottom: 20px;
         color: #545454;
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
         font-size: 14px;
       }
 
@@ -435,7 +442,7 @@
 
     <div class="form-container">
       <div class="form-header">
-        <h1>Book Request Form--</h1>
+        <h1>Book Request Form</h1>
         <!-- <p class="subtitle">The Charlotte Area Book Bank</p>
         <p class="tagline">A life of opportunity starts with a love of reading and Access to Books</p> -->
       </div>
@@ -443,7 +450,15 @@
       <div class="form-content">
         <div class="info-box">
           <strong>Important Information:</strong>
-          We do our best to fulfill every book request as quickly as possible. Please note that all orders are filled based on current book availability. For orders under 800 books, please allow up to 5 business days for fulfillment. For orders of 800 books or more, please allow up to 10 business days for fulfillment. If you have any questions or concerns, please contact Dana Powell, Operations Manager, at <a href="mailto:dana@promising-pages.org">dana@promising-pages.org</a>.
+          We do our best to fulfill every book request as quickly as possible.
+          Please note that all orders are filled based on current book
+          availability. For orders under 800 books, please allow up to 5
+          business days for fulfillment. For orders of 800 books or more, please
+          allow up to 10 business days for fulfillment. If you have any
+          questions or concerns, please contact Dana Powell, Operations Manager,
+          at
+          <a href="mailto:dana@promising-pages.org">dana@promising-pages.org</a
+          >.
         </div>
 
         <p class="required-note">*Indicates a required field</p>
@@ -455,10 +470,14 @@
           target="_parent"
         >
           <input name="oid" type="hidden" value="00D8c00000176n8" />
-          <input name="retURL" type="hidden" value="https://promising-pages.org/book-request-submitted/" />
+          <input
+            name="retURL"
+            type="hidden"
+            value="https://promising-pages.org/book-request-submitted/"
+          />
           <input name="lead_source" type="hidden" value="Web" />
           <input name="recordType" type="hidden" value="0128c000001e1kK" />
-          
+
           <!-- Hidden fields for Salesforce -->
           <input type="hidden" id="pickupHidden" name="00N8c00000aEJox" />
           <input type="hidden" id="pickupTimeHidden" name="00N8c00000e0Wwy" />
@@ -469,23 +488,47 @@
           <div class="form-row">
             <div class="form-group">
               <label for="first_name">First Name*</label>
-              <input id="first_name" name="first_name" type="text" maxlength="40" required />
+              <input
+                id="first_name"
+                name="first_name"
+                type="text"
+                maxlength="40"
+                required
+              />
             </div>
             <div class="form-group">
               <label for="last_name">Last Name*</label>
-              <input id="last_name" name="last_name" type="text" maxlength="80" required />
+              <input
+                id="last_name"
+                name="last_name"
+                type="text"
+                maxlength="80"
+                required
+              />
             </div>
           </div>
 
           <div class="form-group">
             <label for="email">Email Address*</label>
-            <input id="email" name="email" type="email" maxlength="80" required />
+            <input
+              id="email"
+              name="email"
+              type="email"
+              maxlength="80"
+              required
+            />
           </div>
 
           <div class="form-row">
             <div class="form-group">
               <label for="company">Organization/School Name*</label>
-              <input id="company" name="company" type="text" maxlength="80" required />
+              <input
+                id="company"
+                name="company"
+                type="text"
+                maxlength="80"
+                required
+              />
             </div>
             <div class="form-group">
               <label for="title">Title</label>
@@ -496,7 +539,13 @@
           <div class="form-row">
             <div class="form-group">
               <label for="phone">Phone Number*</label>
-              <input id="phone" name="phone" type="text" maxlength="40" required />
+              <input
+                id="phone"
+                name="phone"
+                type="text"
+                maxlength="40"
+                required
+              />
             </div>
             <div class="form-group">
               <label for="00N8c00000G6A2B">Preferred Phone Type</label>
@@ -520,11 +569,23 @@
           <div class="form-row">
             <div class="form-group">
               <label for="city">City*</label>
-              <input id="city" name="city" type="text" maxlength="40" required />
+              <input
+                id="city"
+                name="city"
+                type="text"
+                maxlength="40"
+                required
+              />
             </div>
             <div class="form-group">
               <label for="state">State/Province*</label>
-              <input id="state" name="state" type="text" maxlength="20" required />
+              <input
+                id="state"
+                name="state"
+                type="text"
+                maxlength="20"
+                required
+              />
             </div>
           </div>
 
@@ -535,13 +596,22 @@
             </div>
             <div class="form-group">
               <label for="country">Country*</label>
-              <input id="country" name="country" type="text" maxlength="40" value="United States" required />
+              <input
+                id="country"
+                name="country"
+                type="text"
+                maxlength="40"
+                value="United States"
+                required
+              />
             </div>
           </div>
 
           <h2 class="section-title">Books Information</h2>
 
-          <p class="helper-text">Please provide the number of books for each category:</p>
+          <p class="helper-text">
+            Please provide the number of books for each category:
+          </p>
 
           <div class="book-categories">
             <div class="book-input-group">
@@ -549,23 +619,33 @@
               <input id="00N8c00000aEJnu" name="00N8c00000aEJnu" type="text" />
             </div>
             <div class="book-input-group">
-              <label for="00N8c00000aEJnz">Picture Books (Pre-K - 2nd Grade)</label>
+              <label for="00N8c00000aEJnz"
+                >Picture Books (Pre-K - 2nd Grade)</label
+              >
               <input id="00N8c00000aEJnz" name="00N8c00000aEJnz" type="text" />
             </div>
             <div class="book-input-group">
-              <label for="00N8c00000aEJo9">Early Chapter/Advanced Picture (2nd - 4th Grade)</label>
+              <label for="00N8c00000aEJo9"
+                >Early Chapter/Advanced Picture (2nd - 4th Grade)</label
+              >
               <input id="00N8c00000aEJo9" name="00N8c00000aEJo9" type="text" />
             </div>
             <div class="book-input-group">
-              <label for="00N8c00000aEJoE">Upper Chapter Books (4th - 5th Grade)</label>
+              <label for="00N8c00000aEJoE"
+                >Upper Chapter Books (4th - 5th Grade)</label
+              >
               <input id="00N8c00000aEJoE" name="00N8c00000aEJoE" type="text" />
             </div>
             <div class="book-input-group">
-              <label for="00N8c00000aEJoJ">Middle School Books (6th - 8th Grade)</label>
+              <label for="00N8c00000aEJoJ"
+                >Middle School Books (6th - 8th Grade)</label
+              >
               <input id="00N8c00000aEJoJ" name="00N8c00000aEJoJ" type="text" />
             </div>
             <div class="book-input-group">
-              <label for="00N8c00000e09tp">High School Books (9th - 12th Grade)</label>
+              <label for="00N8c00000e09tp"
+                >High School Books (9th - 12th Grade)</label
+              >
               <input id="00N8c00000e09tp" name="00N8c00000e09tp" type="text" />
             </div>
             <div class="book-input-group">
@@ -590,47 +670,88 @@
 
           <div class="form-group">
             <label for="00N8c00000aEJon">Additional Information</label>
-            <textarea id="00N8c00000aEJon" name="00N8c00000aEJon" rows="3" placeholder="Anything else we should know about the books you are requesting?"></textarea>
+            <textarea
+              id="00N8c00000aEJon"
+              name="00N8c00000aEJon"
+              rows="3"
+              placeholder="Anything else we should know about the books you are requesting?"
+            ></textarea>
           </div>
 
           <div class="form-group">
-            <label for="00N8c00000aEMWm">How many children do you plan to serve with these books?* (Numbers only)</label>
-            <input id="00N8c00000aEMWm" name="00N8c00000aEMWm" type="text" required />
+            <label for="00N8c00000aEMWm"
+              >How many children do you plan to serve with these books?*
+              (Numbers only)</label
+            >
+            <input
+              id="00N8c00000aEMWm"
+              name="00N8c00000aEMWm"
+              type="text"
+              required
+            />
           </div>
 
           <div class="form-group">
-            <label for="00N8c00000aEMWr">What will these books be used for?* (Hold Ctrl to select multiple)</label>
+            <label for="00N8c00000aEMWr"
+              >What will these books be used for?* (Hold Ctrl to select
+              multiple)</label
+            >
             <select name="00N8c00000aEMWr" multiple required>
-              <option value="Building Home Libraries">Building Home Libraries</option>
+              <option value="Building Home Libraries">
+                Building Home Libraries
+              </option>
               <option value="Classroom Libraries">Classroom Libraries</option>
-              <option value="School Library Support">School Library Support</option>
+              <option value="School Library Support">
+                School Library Support
+              </option>
               <option value="Book Giveaway">Book Giveaway</option>
-              <option value="Literacy or Curriculum Night/Fair">Literacy or Curriculum Night/Fair</option>
-              <option value="Summer Reading/Summer Slide">Summer Reading/Summer Slide</option>
+              <option value="Literacy or Curriculum Night/Fair">
+                Literacy or Curriculum Night/Fair
+              </option>
+              <option value="Summer Reading/Summer Slide">
+                Summer Reading/Summer Slide
+              </option>
               <option value="Other">Other</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="00N8c00000aEJos">How many books per child?* (Numbers only)</label>
-            <input id="00N8c00000aEJos" name="00N8c00000aEJos" type="text" required />
+            <label for="00N8c00000aEJos"
+              >How many books per child?* (Numbers only)</label
+            >
+            <input
+              id="00N8c00000aEJos"
+              name="00N8c00000aEJos"
+              type="text"
+              required
+            />
           </div>
 
           <h2 class="section-title">Pickup & Distribution Schedule</h2>
 
           <div class="form-row">
             <div class="form-group">
-              <label for="pickupDate">Pickup Date* (Monday-Thursday only)</label>
+              <label for="pickupDate"
+                >Pickup Date* (Monday-Thursday only)</label
+              >
               <input id="pickupDate" type="date" required />
             </div>
             <div class="form-group">
               <label for="pickupTime">Pickup Time* (9:30 AM - 3:30 PM)</label>
-              <input id="pickupTime" type="time" min="09:30" max="15:30" required />
+              <input
+                id="pickupTime"
+                type="time"
+                min="09:30"
+                max="15:30"
+                required
+              />
             </div>
           </div>
 
           <div class="form-group">
-            <label for="expectedDateInput">Expected Book Distribution Date*</label>
+            <label for="expectedDateInput"
+              >Expected Book Distribution Date*</label
+            >
             <input id="expectedDateInput" type="date" required />
           </div>
 
@@ -638,8 +759,12 @@
             <label for="00N8c00000aEJp2">Book Selection Type*</label>
             <select id="00N8c00000aEJp2" name="00N8c00000aEJp2" required>
               <option value="">--Select an option--</option>
-              <option value="Self-Select">Self-Select (I'll choose my own books)</option>
-              <option value="Pre-Boxed">Pre-Boxed (Staff will select books for me)</option>
+              <option value="Self-Select">
+                Self-Select (I'll choose my own books)
+              </option>
+              <option value="Pre-Boxed">
+                Pre-Boxed (Staff will select books for me)
+              </option>
             </select>
           </div>
 
@@ -652,13 +777,15 @@
       function showAlert(msg) {
         const box = document.getElementById("customAlertBox");
         const text = document.getElementById("customAlertMsg");
+        const form = document.getElementById("webToLeadForm");
         text.textContent = msg;
         box.style.display = "block";
+        form.style.overflow = "hidden";
 
         const overlay = document.createElement("div");
         overlay.id = "customAlertOverlay";
         document.body.appendChild(overlay);
-        
+
         // Update parent height when alert shows
         updateParentHeight();
       }
@@ -668,7 +795,9 @@
         const overlay = document.getElementById("customAlertOverlay");
         box.style.display = "none";
         if (overlay) overlay.remove();
-        
+        const form = document.getElementById("webToLeadForm");
+        form.style.overflow = "hidden";
+
         // Update parent height when alert closes
         updateParentHeight();
       }
@@ -676,22 +805,25 @@
       // Function to send height to parent window
       function updateParentHeight() {
         const height = document.documentElement.scrollHeight;
-        console.log("Current document height:", height);
-        const message = "documentHeight:" + height;
-
-        parent.postMessage(message, "*");
+        window.parent.postMessage(
+          {
+            type: "iframeHeight",
+            height: height,
+          },
+          "*"
+        );
       }
 
       // Update height on load and when content changes
-      window.addEventListener('load', updateParentHeight);
-      window.addEventListener('resize', updateParentHeight);
+      window.addEventListener("load", updateParentHeight);
+      window.addEventListener("resize", updateParentHeight);
 
       // Create observer to watch for DOM changes
       const observer = new MutationObserver(updateParentHeight);
-      observer.observe(document.body, { 
-        childList: true, 
-        subtree: true, 
-        attributes: true 
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+        attributes: true,
       });
 
       (function () {
@@ -719,7 +851,11 @@
           if (year < 1000) return;
 
           const chosen = new Date(year, month - 1, day, 12, 0, 0);
-          const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+          const todayMidnight = new Date(
+            today.getFullYear(),
+            today.getMonth(),
+            today.getDate()
+          );
           const chosenMidnight = new Date(year, month - 1, day);
 
           if (chosenMidnight < todayMidnight) {
